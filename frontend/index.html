@@ -9,20 +9,33 @@
     <h1>Work AI</h1>
     <p>Una aplicación para predecir los costos de sueldos</p>
     <form id="api-form">
-        <label for="var1">tipo de empresa:</label>
-        <input type="number" id="var1" required><br>
+        <label for="var1">Tipo de empresa:</label>
+        
+        <div class="combo-box">
+            <select required id="tipo-empresa-select">
+                <option value="" disabled selected>Selecciona tu tipo de empresa</option>
+            </select>
+        </div>
 
-        <label for="var2">numero de provincia:</label>
-        <input type="number" id="var2" required><br>
+        <label for="var2">Número de provincia:</label>
+        <div class="combo-box">
+            <select required id="provincia-select">
+                <option value="" disabled selected>Selecciona tu provincia</option>
+            </select>
+        </div>
 
-        <label for="var3">ciudad:</label>
-        <input type="number" id="var3" required><br>
+        <label for="var3">Ciudad:</label>
+        <div class="combo-box">
+            <select required id="ciuu-desc-select">
+                <option value="" disabled selected>Selecciona a qué se dedica tu negocio</option>
+            </select>
+        </div>
 
-        <label for="var4">cantidad de empleados:</label>
-        <input type="number" id="var4" required><br>
+        <label for="var4">Cantidad de empleados:</label>
+        <input type="number" min="0" id="var4" required><br>
 
-        <label for="var5">ventas anuales:</label>
-        <input type="number" id="var5" required><br>
+        <label for="var5">Ventas anuales:</label>
+        <input type="number" min="0" id="var5" required><br>
 
         <input type="submit" value="Enviar">
     </form>
