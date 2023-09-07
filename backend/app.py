@@ -17,9 +17,10 @@ def predecir():
         if len(datos_entrada) != 5:
             return "Se requieren 5 variables de entrada", 400
         datos_entrada = [datos_entrada['tipo_establecimiento'], datos_entrada['provincia_desc'], datos_entrada['ciiu_desc'], datos_entrada['personal_ocupado'], datos_entrada['ventas']]
-
+        print(datos_entrada)
         # normalizar los datos con el scaler entrenado
         datos_norm= scaler.transform([datos_entrada])
+        print(datos_norm)
         # Realiza la predicción utilizando el modelo
         resultado = modelo.predict(datos_norm)[0]
         respuesta = {'resultado': resultado}

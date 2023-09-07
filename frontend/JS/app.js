@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         console.log(var1,var2,var3, var4,var5);
         // Crear un objeto JSON con los datos
-        /*const data = {
+        const data = {
             tipo_establecimiento: var1,
             provincia_desc: var2,
             ciiu_desc: var3,
@@ -374,6 +374,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => {
             console.error('Error:', error);
-        });*/
+        });
     });
 });
