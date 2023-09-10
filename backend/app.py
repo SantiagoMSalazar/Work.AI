@@ -27,7 +27,7 @@ def predecir():
         return flask.jsonify(respuesta)
 
     except Exception as e:
-        return str(e), 500
+            return str(e), 500
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=55000)
